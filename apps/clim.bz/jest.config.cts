@@ -6,12 +6,12 @@ const createJestConfig = nextJest({
 
 const config = {
   displayName: 'clim.bz',
-  preset: '../jest.preset.js',
+  preset: '../../jest.preset.js',
   transform: {
     '^(?!.*\\.(js|jsx|ts|tsx|css|json)$)': '@nx/react/plugins/jest',
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../coverage/clim.bz',
+  coverageDirectory: '../../coverage/apps/clim.bz',
   testEnvironment: 'jsdom',
 };
 

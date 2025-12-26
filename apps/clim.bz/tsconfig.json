@@ -1,5 +1,5 @@
 {
-  "extends": "../tsconfig.base.json",
+  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "jsx": "preserve",
     "noEmit": true,
@@ -31,8 +31,8 @@
     "src/**/*.tsx",
     "src/**/*.js",
     "src/**/*.jsx",
-    "../clim.bz/.next/types/**/*.ts",
-    "../dist/clim.bz/.next/types/**/*.ts",
+    "../../clim.bz/.next/types/**/*.ts",
+    "../../dist/clim.bz/.next/types/**/*.ts",
     "next-env.d.ts"
   ],
   "exclude": [

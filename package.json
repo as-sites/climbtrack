@@ -50,7 +50,8 @@
   },
   "workspaces": [
     "packages/*",
-    "clim.bz"
+    "clim.bz",
+    "apps/*"
   ],
   "dependencies": {
     "next": "~16.0.1",

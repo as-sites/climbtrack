@@ -4,9 +4,6 @@
   "files": [],
   "references": [
     {
-      "path": "./clim.bz-e2e"
-    },
-    {
       "path": "./clim.bz"
     }
   ]
