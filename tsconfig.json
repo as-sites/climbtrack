@@ -5,6 +5,12 @@
   "references": [
     {
       "path": "./clim.bz"
+    },
+    {
+      "path": "./libs/shadcn"
+    },
+    {
+      "path": "./libs/ui"
     }
   ]
 }
