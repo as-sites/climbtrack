@@ -4,13 +4,13 @@
   "files": [],
   "references": [
     {
-      "path": "./clim.bz"
-    },
-    {
       "path": "./libs/shadcn"
     },
     {
       "path": "./libs/ui"
+    },
+    {
+      "path": "./apps/clim.bz"
     }
   ]
 }

@@ -20,6 +20,7 @@ export default {
         "*.mts",
         "*.ts",
         "*.tsx",
+        "*.d.ts",
       ],
       options: {
         parser: "typescript",
@@ -29,15 +30,15 @@ export default {
       files: ["*.json"],
       options: {
         parser: "json",
-        tabWidth: 2,
-        useTabs: false,
+        tabWidth: 4,
+        useTabs: true,
       },
     },
     {
       files: ["*.json5"],
       options: {
         parser: "json5",
-        tabWidth: 2,
+        tabWidth: 4,
         useTabs: false,
       },
     },
@@ -45,7 +46,7 @@ export default {
       files: ["*.jsonc"],
       options: {
         parser: "jsonc",
-        tabWidth: 2,
+        tabWidth: 4,
         useTabs: false,
       },
     },
