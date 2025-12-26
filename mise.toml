@@ -1,0 +1,5 @@
+[tools]
+node = '24.8.0'
+
+[env]
+_.path = ['node_modules/.bin']
