@@ -1,16 +1,10 @@
 {
-  "extends": "./tsconfig.base.json",
-  "compileOnSave": false,
-  "files": [],
-  "references": [
-    {
-      "path": "./libs/shadcn"
-    },
-    {
-      "path": "./libs/ui"
-    },
-    {
-      "path": "./apps/clim.bz"
-    }
-  ]
+	"extends": "./tsconfig.base.json",
+	"compileOnSave": false,
+	"files": [],
+	"references": [
+		{
+			"path": "./apps/clim.bz"
+		}
+	]
 }

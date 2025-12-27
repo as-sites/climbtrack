@@ -5,8 +5,8 @@ const createJestConfig = nextJest({
 });
 
 const config = {
-	coverageDirectory: '../../coverage/apps/clim.bz',
-	displayName: 'clim.bz',
+	coverageDirectory: '../../coverage/apps/boulder.best',
+	displayName: '@boulder.best/track',
 	moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
 	preset: '../../jest.preset.js',
 	testEnvironment: 'jsdom',

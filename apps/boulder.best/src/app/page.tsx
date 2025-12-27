@@ -1,9 +1,9 @@
 export default function Index() {
 	/*
-   * Replace the elements below with your own.
-   *
-   * Note: The corresponding styles are in the ./index.tailwind file.
-   */
+	 * Replace the elements below with your own.
+	 *
+	 * Note: The corresponding styles are in the ./index.tailwind file.
+	 */
 	return (
 		<div>
 			<div className="wrapper">
@@ -325,8 +325,7 @@ export default function Index() {
 									target="_blank"
 								>
 									{' '}
-									What is Nx Cloud?
-									{' '}
+									What is Nx Cloud?{' '}
 								</a>
 							</div>
 							<a
