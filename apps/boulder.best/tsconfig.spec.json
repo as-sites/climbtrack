@@ -27,5 +27,8 @@
 		{
 			"path": "./tsconfig.json"
 		}
-	]
+	],
+	"nx": {
+		"addTypecheckTarget": true
+	}
 }

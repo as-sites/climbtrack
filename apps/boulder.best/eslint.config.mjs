@@ -11,4 +11,10 @@ export default [
 	},
 	next.configs.recommended,
 	...react,
+	{
+		files: ['./src/app/**/*.tsx', './src/app/**/*.ts'],
+		rules: {
+			'react/function-component-definition': 'off',
+		},
+	},
 ];

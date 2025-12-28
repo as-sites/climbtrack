@@ -118,7 +118,7 @@ const Carousel = forwardRef<HTMLDivElement, CarouselProps & HTMLAttributes<HTMLD
 		return (
 			<CarouselContext.Provider
 				value={{
-					api: api,
+					api,
 					canScrollNext,
 					canScrollPrev,
 					carouselRef,

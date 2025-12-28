@@ -9,7 +9,33 @@ export default defineConfig([
 	...nx.configs['flat/typescript'],
 	...nx.configs['flat/javascript'],
 	{
-		ignores: ['**/dist', '**/out-tsc'],
+		ignores: [
+			'**/dist',
+			'**/out-tsc',
+			'**/dist',
+			'**/out-tsc',
+			'**/test-output',
+			'**/vite.config.*.timestamp*',
+			'**/.next',
+		],
+	},
+	{
+		files: ['**/*.ts', '**/*.tsx', '**/*.js', '**/*.jsx'],
+		rules: {
+			'@nx/enforce-module-boundaries': [
+				'error',
+				{
+					allow: ['^.*/eslint(\\.base)?\\.config\\.[cm]?[jt]s$'],
+					depConstraints: [
+						{
+							onlyDependOnLibsWithTags: ['*'],
+							sourceTag: '*',
+						},
+					],
+					enforceBuildableLibDependency: true,
+				},
+			],
+		},
 	},
 	{
 		files: ['**/*.ts', '**/*.tsx', '**/*.js', '**/*.jsx'],
