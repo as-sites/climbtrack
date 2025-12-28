@@ -35,7 +35,7 @@ jobs:
         run: npm ci
 
       - name: Show Nx environment
-        run: npx nx report
+        run: nx report
 
       - run: nx format:check --verbose
       - run: nx run-many -t lint test build typecheck e2e-ci
