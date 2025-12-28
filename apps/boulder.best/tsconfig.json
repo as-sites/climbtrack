@@ -43,6 +43,8 @@
 		"jest.config.cts",
 		"src/**/*.spec.ts",
 		"src/**/*.test.ts",
+		"specs/**/*.ts",
+		"specs/**/*.tsx",
 		".next",
 		"eslint.config.js",
 		"eslint.config.cjs",

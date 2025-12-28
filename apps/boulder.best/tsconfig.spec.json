@@ -18,7 +18,9 @@
 		"src/**/*.spec.js",
 		"src/**/*.test.jsx",
 		"src/**/*.spec.jsx",
-		"src/**/*.d.ts"
+		"src/**/*.d.ts",
+		"specs/**/*.ts",
+		"specs/**/*.tsx"
 	],
 	"exclude": ["node_modules", "src/**/*.spec.ts", "src/**/*.test.ts"],
 	"references": [

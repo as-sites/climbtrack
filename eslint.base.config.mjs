@@ -1,5 +1,6 @@
 import nx from '@nx/eslint-plugin';
 import perfectionist from 'eslint-plugin-perfectionist';
+import react from 'eslint-plugin-react';
 import { defineConfig } from 'eslint/config';
 import tseslint from 'typescript-eslint';
 
@@ -43,6 +44,34 @@ export default defineConfig([
 		// Override or add rules here
 		rules: {
 			'@typescript-eslint/no-import-type-side-effects': 'error',
+		},
+	},
+	tseslint.configs.disableTypeChecked,
+	{
+		files: [
+			'**/*.ts',
+			'**/*.tsx',
+			'**/*.cts',
+			'**/*.mts',
+			'**/*.js',
+			'**/*.jsx',
+			'**/*.cjs',
+			'**/*.mjs',
+		],
+		rules: {
+			'arrow-body-style': ['error', 'as-needed'],
+			'object-shorthand': ['error', 'always'],
+		},
+	},
+]);
+
+const reactConfig = defineConfig([
+	{
+		files: ['**/*.ts', '**/*.tsx', '**/*.cts', '**/*.mts'],
+		plugins: {
+			react,
+		},
+		rules: {
 			'no-restricted-imports': [
 				'error',
 				{
@@ -63,31 +92,6 @@ export default defineConfig([
 					],
 				},
 			],
-		},
-	},
-	tseslint.configs.disableTypeChecked,
-	{
-		files: [
-			'**/*.ts',
-			'**/*.tsx',
-			'**/*.cts',
-			'**/*.mts',
-			'**/*.js',
-			'**/*.jsx',
-			'**/*.cjs',
-			'**/*.mjs',
-		],
-		// Override or add rules here
-		rules: {
-			'arrow-body-style': ['error', 'as-needed'],
-		},
-	},
-]);
-
-const reactConfig = defineConfig([
-	{
-		files: ['**/*.ts', '**/*.tsx', '**/*.cts', '**/*.mts'],
-		rules: {
 			'react/forward-ref-uses-ref': 'error',
 			'react/function-component-definition': [
 				'error',
@@ -101,6 +105,11 @@ const reactConfig = defineConfig([
 			'react/jsx-handler-names': 'error',
 			'react/jsx-no-useless-fragment': 'error',
 			'react/jsx-pascal-case': 'error',
+		},
+		settings: {
+			react: {
+				version: 'detect',
+			},
 		},
 	},
 ]);
