@@ -73,6 +73,7 @@
 			}
 		}
 	],
+	"defaultProject": "@boulder.best/track",
 	"targetDefaults": {
 		"test": {
 			"dependsOn": ["^build"]

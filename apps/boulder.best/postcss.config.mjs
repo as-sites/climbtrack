@@ -4,6 +4,8 @@
 // See: https://nx.dev/guides/using-tailwind-css-in-react#step-4:-applying-configuration-to-libraries
 
 /** @type {import('postcss-load-config').Config} */
-export const plugins = {
-	'@tailwindcss/postcss': {},
+export default {
+	plugins: {
+		'@tailwindcss/postcss': {},
+	},
 };

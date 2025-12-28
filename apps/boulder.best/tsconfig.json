@@ -18,23 +18,12 @@
 				"name": "next"
 			}
 		],
-		"paths": {
-			"@/*": ["./src/*"]
-		},
 		"types": ["jest", "node"],
 		"outDir": "dist",
 		"rootDir": "src",
 		"tsBuildInfoFile": "dist/tsconfig.tsbuildinfo"
 	},
-	"include": [
-		"src/**/*.ts",
-		"src/**/*.tsx",
-		"src/**/*.js",
-		"src/**/*.jsx",
-		"../../clim.bz/.next/types/**/*.ts",
-		"../../dist/clim.bz/.next/types/**/*.ts",
-		"next-env.d.ts"
-	],
+	"include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.js", "src/**/*.jsx", "next-env.d.ts"],
 	"exclude": [
 		"out-tsc",
 		"dist",
@@ -52,5 +41,10 @@
 	],
 	"nx": {
 		"addTypecheckTarget": true
-	}
+	},
+	"references": [
+		{
+			"path": "../../libs/shadcn"
+		}
+	]
 }

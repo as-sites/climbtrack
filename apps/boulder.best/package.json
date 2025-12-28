@@ -3,11 +3,21 @@
 	"version": "0.0.1",
 	"private": true,
 	"nx": {
-		"name": "@boulder.best/track"
+		"name": "@boulder.best/track",
+		"targets": {
+			"typecheck": {
+				"executor": "@nx/js:tsc",
+				"options": {
+					"main": "./src/app/page.tsx",
+					"outputPath": "./out-tsc",
+					"tsConfig": "./tsconfig.json"
+				}
+			}
+		}
 	},
 	"dependencies": {
-		"next": "~16.0.1",
-		"react": "^19.0.0",
-		"react-dom": "^19.0.0"
+		"next": "~16.1.1",
+		"react": "^19.2.3",
+		"react-dom": "^19.2.3"
 	}
 }
