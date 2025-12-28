@@ -1,0 +1,7 @@
+{
+	"buildCommand": "npx nx build boulder.best --prod",
+	"installCommand": "npm ci --include=optional",
+	"framework": null,
+	"outputDirectory": "apps/boulder.best/.next",
+	"ignoreCommand": "npx nx-ignore boulder.best"
+}
