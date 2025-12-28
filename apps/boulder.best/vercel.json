@@ -1,7 +1,7 @@
 {
 	"$schema": "https://openapi.vercel.sh/vercel.json",
-	"buildCommand": "npx nx build boulder.best --prod",
-	"installCommand": "npm ci --include=optional",
+	"buildCommand": "cd ../.. && npx nx build boulder.best --prod",
+	"installCommand": "cd ../.. && npm ci --include=optional",
 	"framework": null,
 	"outputDirectory": "apps/boulder.best/.next",
 	"ignoreCommand": "cd ../.. &&npx nx-ignore boulder.best"
