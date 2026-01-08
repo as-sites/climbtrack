@@ -34,9 +34,9 @@
 		}
 	},
 	"dependencies": {
-		"next": "~16.1.1",
-		"react": "^19.2.3",
-		"react-dom": "^19.2.3",
+		"next": "catalog:next",
+		"react": "catalog:react",
+		"react-dom": "catalog:react",
 		"@boulder.best/shadcn": "workspace:^"
 	},
 	"devDependencies": {
