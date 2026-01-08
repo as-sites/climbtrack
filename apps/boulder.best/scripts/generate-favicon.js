@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import favicons from 'favicons';
-import { mkdir, writeFile } from 'node:fs/promises';
-import { join } from 'path';
+import { access, mkdir, writeFile } from 'node:fs/promises';
+import { join } from 'node:path';
 
 const rootDir = join(import.meta.dirname, '..');
 
@@ -12,12 +12,21 @@ try {
 	const publicDir = join(rootDir, 'public');
 	const outputDir = join(rootDir, 'public', 'manifest');
 
+	// Verify the source logo file exists
+	try {
+		await access(source);
+	} catch {
+		console.error(`❌ Source file not found: ${source}`);
+		console.error('   Please ensure logo.svg exists in the public directory.');
+		process.exit(1);
+	}
+
 	// Ensure the output directory exists
 	await mkdir(outputDir, { recursive: true });
 
 	/** @type {import('favicons').FaviconOptions} */
 	const configuration = {
-		appDescription: 'Boulder tracking and climbing app',
+		appDescription: 'Best boulder tracking and climbing app',
 		appleStatusBarStyle: 'black-translucent',
 		appName: 'Boulder Best',
 		appShortName: 'Boulder',
