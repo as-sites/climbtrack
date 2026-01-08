@@ -374,8 +374,8 @@ importers:
         specifier: catalog:nx
         version: 22.3.3
       '@rspack/binding-linux-x64-gnu':
-        specifier: 1.6.8
-        version: 1.6.8
+        specifier: 1.7.1
+        version: 1.7.1
       '@swc/core-linux-x64-gnu':
         specifier: catalog:swc
         version: 1.15.8
@@ -3983,11 +3983,6 @@ packages:
   '@rspack/binding-linux-arm64-musl@1.7.1':
     resolution: {integrity: sha512-maBX19XyiVkxzh/NA79ALetCobc4zUyoWkWLeCGyW5xKzhPVFatJp+qCiHqHkqUZcgRo+1i5ihoZ2bXmelIeZg==}
     cpu: [arm64]
-    os: [linux]
-
-  '@rspack/binding-linux-x64-gnu@1.6.8':
-    resolution: {integrity: sha512-tv3BWkTE1TndfX+DsE1rSTg8fBevCxujNZ3MlfZ22Wfy9x1FMXTJlWG8VIOXmaaJ1wUHzv8S7cE2YUUJ2LuiCg==}
-    cpu: [x64]
     os: [linux]
 
   '@rspack/binding-linux-x64-gnu@1.7.1':
@@ -15216,9 +15211,6 @@ snapshots:
     optional: true
 
   '@rspack/binding-linux-arm64-musl@1.7.1':
-    optional: true
-
-  '@rspack/binding-linux-x64-gnu@1.6.8':
     optional: true
 
   '@rspack/binding-linux-x64-gnu@1.7.1':
